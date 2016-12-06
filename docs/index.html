@@ -15,13 +15,13 @@
         }
 
         div {
-            border-radius: 1em;
             margin: auto;
-            padding: 1em;
+            padding: 2em 4em;
         }
 
         body > div:nth-child(2) {
             background-color: lightpink;
+            border-radius: 1em 1em 0 0;
         }
 
         body > div:nth-child(3) {
@@ -38,8 +38,9 @@
 
         body > div:last-child {
             background-color: lightsalmon;
+            border-radius: 0 0 1em 1em;
             padding-top: .5em;
-            text-align: center
+            text-align: center;
         }
 
         h1 {
@@ -50,25 +51,30 @@
             border-bottom: solid 1px limegreen;
         }
 
+        code {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
         body > div:nth-child(3) ol {
             counter-reset: li;
-            list-style: none;
+            list-style-type: none;
         }
+
         body > div:nth-child(3) li {
             counter-increment: li;
-            margin: 1em;
+            line-height: 2em;
+            list-style-position: outside;
         }
         body > div:nth-child(3) li:before {
             background-color: red;
             color: white;
-            content: counter(li);
+            content: counter(li) ".";
             direction: rtl;
-            display: inline-block;
-            line-height: 2em;
-            margin-left: -1.5em;
+            line-height: 3em;
             margin-right: 1em;
-            padding: .2em;
-            padding-right: .5em;
+            padding: .5em;
             text-align: right;
             width: 1.5em;
         }
@@ -90,9 +96,9 @@
         <ol>
             <li>Downloading the shell script.</li>
             <li>Open Terminal application on your Mac</li>
-            <li>run command "cd folderContainingTheScript", replace folderContainingTheScript with path to the folder containing the downloaded shell script</li>
-            <li>run "chmod 755 safari_bookmark_backup.sh" to give the shell script execution privilege</li>
-            <li>run the command "sh safari_bookmark_backup.sh" to use the script</li>
+            <li>run command <code>cd folderContainingTheScript</code>, replace folderContainingTheScript with path to the folder containing the downloaded shell script</li>
+            <li>run <code>chmod 755 safari_bookmark_backup.sh</code> to give the shell script execution privilege</li>
+            <li>run the command <code>sh safari_bookmark_backup.sh</code> to use the script</li>
         </ol>
     </div>
     <div id="plan">
