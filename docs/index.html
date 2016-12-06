@@ -15,25 +15,29 @@
         }
 
         div {
+            border-radius: 1em;
             margin: auto;
             padding: 1em;
         }
 
-        body div:first-child {
-            background-color: lightseagreen;
+        body > div:nth-child(2) {
+            background-color: lightpink;
         }
 
-        #plan {
+        body > div:nth-child(3) {
             background-color: lightskyblue;
         }
 
-        #version {
+        body > div:nth-child(4) {
             background-color: lightyellow
         }
 
-        #footer {
+        body > div:nth-child(5) {
+            background-color: lightblue;
+        }
+
+        body > div:last-child {
             background-color: lightsalmon;
-            border-top: solid 1px black;
             padding-top: .5em;
             text-align: center
         }
@@ -43,12 +47,17 @@
         }
 
         h3 {
-            border-bottom: solid 1px grey;
+            border-bottom: solid 1px limegreen;
         }
 
-        #usage li {
+        body > div:nth-child(3) li {
             line-height: 1.2em;
             margin: .2em;
+        }
+
+        .update {
+            padding: 0;
+            padding-left: 1em;
         }
     </style>
 </head>
