@@ -50,9 +50,27 @@
             border-bottom: solid 1px limegreen;
         }
 
+        body > div:nth-child(3) ol {
+            counter-reset: li;
+            list-style: none;
+        }
         body > div:nth-child(3) li {
-            line-height: 1.2em;
-            margin: .2em;
+            counter-increment: li;
+            margin: 1em;
+        }
+        body > div:nth-child(3) li:before {
+            background-color: red;
+            color: white;
+            content: counter(li);
+            direction: rtl;
+            display: inline-block;
+            line-height: 2em;
+            margin-left: -1.5em;
+            margin-right: 1em;
+            padding: .2em;
+            padding-right: .5em;
+            text-align: right;
+            width: 1.5em;
         }
 
         .update {
