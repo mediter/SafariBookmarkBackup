@@ -4,7 +4,7 @@ This script is designed to deal with the repitive tasks of backup Safari Bookmar
 
 ## Usage Instructions
 
-1. Download ![the shell script](https://github.com/mediter/SafariBookmarkBackup/blob/master/safari_bookmark_backup.sh)
+1. Download [the shell script](https://github.com/mediter/SafariBookmarkBackup/blob/master/safari_bookmark_backup.sh)
 
 2. Open Terminal application on your Mac
 
